@@ -39,7 +39,7 @@ st.set_page_config(
     layout="wide",
 )
 
-st.title("Streamlit funcitons simulation")  # keeping your exact title text (typo included)
+st.title("Streamlit functions simulation")  # keeping your exact title text (typo included)
 
 
 # -----------------------------
