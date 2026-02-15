@@ -14,17 +14,20 @@ import time
 import pickle
 import matplotlib.pyplot as plt
 import plotly.express as px
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from sklearn.pipeline import Pipeline
-from sklearn.linear_model import LogisticRegression
-from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import (
     accuracy_score,
     confusion_matrix,
     classification_report,
+ mean_absolute_error, mean_squared_error, r2_score
 )
-from sklearn.datasets import load_iris, load_wine
+from sklearn.datasets import load_iris, load_wine, load_diabetes
+from sklearn.model_selection import train_test_split, KFold, StratifiedKFold, cross_val_score
+from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import Pipeline
+from sklearn.linear_model import LinearRegression, Ridge, Lasso, LogisticRegression
+from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor
+
+
 
 
 # -----------------------------
